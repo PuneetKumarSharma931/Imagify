@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagify</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav>
+            <a href="/" class="nav-link">Image Generator</a>
+            <a href="/variation.html" class="nav-link">Image Variation</a>
+    </nav>
+
+    <h1>Welcome to Imagify!!</h1>
+    
+    <div class="main-selection-container">
+        <input type="text" name="prompt" id="prompt" placeholder="Describe your image...">
+
+        <label for="size">Select the size of the image</label>
+        <br/>
+        <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <button id="generate-button">Generate!</button>
+
+    </div>
+
+    <div class="main-image-container">
+        <img src="" alt="Generated Image" id="generatedImage">
+        <p id="defaultText">Your image will appear here</p>
+        <p id="loader">Generating your image...</p>
+    </div>
+
+    <script src="./js/index.js"></script>
+
+    <footer>
+        <p>&copy Imagify 2023</p>
+        <p>Powered by OpenAI</p>
+        <p>Made by Puneet Kumar Sharma</p>
+    </footer>
+    
+</body>
+</html>
